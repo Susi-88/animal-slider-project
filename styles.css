@@ -18,8 +18,84 @@ header {
     height: 50px;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 100;
 }
 
 .nav-item {
     margin-right: 3rem;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -50px;
+    position: relative;
+}
+
+.carousel .list .item {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.carousel .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .list .item .content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 1140px;
+    max-width: 80%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 0 5px 10px #0004;
+}
+
+.carousel .list .item .content .author {
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.carousel .list .item .content .title,
+.carousel .list .item .content .topic {
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+
+.carousel .list .item .content .topic {
+    color: #f1683a;
+}
+
+.carousel .list .item .content .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.carousel .list .item .content .buttons button {
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.carousel .list .item .content .buttons button:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+    border: 1px solid #eee;
+    
 }

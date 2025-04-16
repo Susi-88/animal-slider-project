@@ -40,7 +40,11 @@ header {
     position: absolute;
     inset: 0 0 0 0;
 }
-
+/*
+.carousel .list .item:nth-child(1) {
+    z-index: 1;
+}
+*/
 .carousel .list .item img {
     width: 100%;
     height: 100%;
@@ -134,4 +138,35 @@ header {
 
 .thumbnail-item .content .title{
     font-weight: bold;
+}
+
+/* ARROWS */
+
+.arrows {
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.arrows button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border: none;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+}
+
+.arrows button:hover {
+    background-color: #eee;
+    color: #0004;
 }

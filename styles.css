@@ -50,24 +50,25 @@ header {
         .carousel .list .item:nth-child(1) .topic,
         .carousel .list .item:nth-child(1) .description,
         .carousel .list .item:nth-child(1) .buttons {
-            transform: translatey(50px);
+            transform: translateY(50px);
             filter: blur(20px);
             opacity: 0;
-            animation: showContent 0.5s 1s linear 1 forwards;
+            animation: showContent 0.5s linear 1 forwards;
         }
 
         @keyframes showContent {
             to {
-                opacity: 1;
+                transform: translateY(0);
                 filter: blur(0);
-                transform: translatey(0);
+                opacity: 1;
             }
         }
 
-        .carousel .list .item:nth-child(1) .title       {animation-delay: 1.2s;}
-        .carousel .list .item:nth-child(1) .topic       {animation-delay: 1.4s;}
-        .carousel .list .item:nth-child(1) .description {animation-delay: 1.6s;}
-        .carousel .list .item:nth-child(1) .buttons     {animation-delay: 1.8s;}
+        .carousel .list .item:nth-child(1) .author      {animation-delay: 0.6s; }
+        .carousel .list .item:nth-child(1) .title       {animation-delay: 0.8s;   }
+        .carousel .list .item:nth-child(1) .topic       {animation-delay: 1.0s; }
+        .carousel .list .item:nth-child(1) .description {animation-delay: 1.2s; }
+        .carousel .list .item:nth-child(1) .buttons     {animation-delay: 1.4s; }
 
 .carousel .list .item img {
     width: 100%;
@@ -119,6 +120,7 @@ header {
     letter-spacing: 3px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .carousel .list .item .content .buttons button:nth-child(2) {
@@ -200,13 +202,13 @@ header {
 /* EFFEKT NEXT KLICK */
 
 .carousel.next .list .item:nth-child(1) img {
+    position: absolute;
     width: 150px;
     height: 220px;
-    position: absolute;
     left:50%;
     bottom: 50px;
     border-radius: 20px;
-    animation: showImage 0.5s linear 1 forwards;
+    animation: showImage 0.6s linear 1 forwards;
 }
 
     @keyframes showImage {
@@ -219,7 +221,7 @@ header {
         }
     }
 
-.carousel.next .thumbnail .item:nth-child(1) {
+.carousel.next .thumbnail .item:nth-last-child(1) {
     width: 0;
     overflow: hidden;
     animation: showThumbnail .5s linear 1 forwards;
@@ -236,11 +238,11 @@ header {
     animation: transformThumbnail .5s linear 1 forwards;
 }
 
-@keyframes transformThumbnail {
-    to {
-        transform: translateX(0);
+    @keyframes transformThumbnail {
+        to {
+            transform: translateX(0);
+        }
     }
-}
 
 /* EFFEKT PREV KLICK */
 
@@ -252,7 +254,7 @@ header {
     position: absolute;
     left:0;
     bottom: 0;
-    animation: outImage 0.5s linear 1 forwards;
+    animation: outImage 0.6s linear 1 forwards;
 }
 
     @keyframes outImage {
@@ -265,24 +267,24 @@ header {
         }
     }
 
-.carousel.prev .thumbnail .item:nth-child(2) {
+.carousel.prev .thumbnail .item:nth-child(1) {
     width: 0;
     overflow: hidden;
     opacity: 0;
-    animation: showThumbnail .5s linear 1 forwards;
+    animation: showThumbnail 0.5s linear 1 forwards;
 }
 
-.carousel.prev .thumbnail .item:nth-child(2) .author,
-.carousel.prev .thumbnail .item:nth-child(2) .title,
-.carousel.prev .thumbnail .item:nth-child(2) .topic,
-.carousel.prev .thumbnail .item:nth-child(2) .description,
-.carousel.prev .thumbnail .item:nth-child(2) .buttons {
-    animation: contentOut 1.5s linear 1 forwards;
+.carousel.prev .list .item:nth-child(2) .author,
+.carousel.prev .list .item:nth-child(2) .title,
+.carousel.prev .list .item:nth-child(2) .topic,
+.carousel.prev .list .item:nth-child(2) .description,
+.carousel.prev .list .item:nth-child(2) .buttons {
+    animation: contentOut 1s linear 1 forwards;
 }
 
     @keyframes contentOut {
         to {
-            transform: translateY(150px);
+            transform: translateY(-150px);
             filter: blur(20px);
             opacity: 0;
         }
@@ -318,11 +320,13 @@ header {
         }
     }
 
-    @media screen and (max-width: 678px) {
-        .carousel .list .item .content {
-            padding-right: 0;
-        }
-        .carousel .list .item .content .title {
-            font-size: 30px;
-        }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 678px) {
+    .carousel .list .item .content {
+        padding-right: 0;
     }
+    .carousel .list .item .content .title {
+        font-size: 30px;
+    }
+}

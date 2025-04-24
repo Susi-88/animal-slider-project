@@ -1,41 +1,52 @@
-# 👋 Hello developer!
-This project contains a basic HTML structure to get you started. Check our [tutorials for frontend development](https://www.w3schools.com/where_to_start.asp) to learn the basics of [HTML](https://www.w3schools.com/html/default.asp) and [CSS](https://www.w3schools.com/css/default.asp). 🦄
+# Carousel Webprojekt
 
 
-## 🏗 What's next?
+## English
 
-Build your project however you like using HTML, CSS and JavaScript. 
+This is a practice project where I use HTML, CSS, and JavaScript. The goal is to build a modern website with a main page featuring a fullscreen carousel (slideshow). The carousel can switch slides both automatically and manually, using CSS animations for transitions. More pages are planned and will be added soon.
 
-Use these four files as your starting point:
+**Note:**  
+This project contains AI-generated images and texts, some of which have been edited. Some texts are also taken from Lorem Ipsum.
 
-- **README.md:** This is the file that you are reading now. You can change the text in this file to leave information to others about your website - or delete it.
-- **index.html:** This is the default page for your space, where you write HTML, the standard markup language for creating web pages.
-- **styles.css:** Use the CSS file to style your content and change the look of your space with beautiful colors, fonts and much more. 
-- **scripts.js:** Use this file to make your website dynamic and interactive with JavaScript. 
+### Features
 
-> **Note:** The **styles.css** and **scripts.js** files link into the **index.html** file so that they are all connected.
+- Main page with fullscreen carousel (slideshow)
+- Automatic and manual slide switching
+- Animated transitions using CSS
+- Modern, responsive design
+- Additional pages ("Coming Soon")
 
+### Preview
 
-## 🎨 Where to find everything
+https://www.w3profile.com/zsuzsanna-benkoe -> Spaces (https://animal-slider-project.w3spaces.com/)
 
-- **Fonts:** Add your favorite from **Google fonts**.  
-	[Go to tutorial about fonts](https://www.w3schools.com/w3css/w3css_fonts_google.asp)
+### License
 
-- **Icons:** Add icons with **Fontawesome** and their free library.  
-	[Go to tutorial about Fontawesome](https://www.w3schools.com/icons/fontawesome5_intro.asp)
-
-- **Images:** Upload images and add their URLs to your code.  
-	[Go to article about how to upload files](https://support.w3schools.com/hc/en-gb/articles/4410414928017)
-
-> ⚡️ **Tip:** [Set up Google Analytics](https://www.w3schools.com/howto/howto_google_analytics.asp) to get valuable insights about your space and visitors. 
-	
-
-### ⛑ Need support?
-[Join our Discord community](https://discord.gg/6Z7UaRbUQM) and ask questions in the **#spaces-general** channel.
+This project is for practice purposes only.
 
 
-### 🚀 Upgrade to Pro
-[Upgrade your account](https://billing.w3schools.com/products/spaces) to boost your space and take your projects to the next level; more requests, more storage and more power for up to 10 spaces.
+***
 
 
-Happy learning!
+## Deutsch
+
+Dies ist ein Übungsprojekt, in dem ich HTML, CSS und JavaScript verwende. Ziel des Projekts ist es, eine moderne Webseite mit einer Hauptseite zu erstellen, die ein großes, bildschirmfüllendes Karussell (Slideshow) enthält. Das Karussell kann sowohl automatisch als auch manuell zwischen den Slides wechseln und verwendet CSS-Animationen für die Übergänge. Weitere Seiten sind geplant und werden demnächst hinzugefügt.
+
+**Hinweis:**  
+Dieses Projekt enthält KI-generierte Bilder und Texte, die teilweise bearbeitet wurden. Die Texte stammen teilweise auch von Lorem Ipsum.
+
+### Features
+
+- Hauptseite mit bildschirmfüllendem Carousel (Slideshow)
+- Automatischer und manueller Slide-Wechsel
+- Animierte Übergänge mit CSS
+- Moderne, responsive Gestaltung
+- Weitere Seiten ("Coming Soon")
+
+### Vorschau
+
+https://www.w3profile.com/zsuzsanna-benkoe -> Spaces (https://animal-slider-project.w3spaces.com/)
+
+### Lizenz
+
+Dieses Projekt dient nur zu Übungszwecken.
